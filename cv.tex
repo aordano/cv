@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%	Preamble
+%------------
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage[total={170mm,257mm}, left=20mm, right=20mm]{geometry}
+\usepackage{fontspec}
+\usepackage{avant}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\moderncvstyle{casual}
+\moderncvcolor{purple}
+
+\firstname{Ágata Irene}
+\familyname{Ordano}
+\title{Resumé}
+\email{aordano@protonmail.com}
+
+\begin{document}
+
+\setromanfont{Helvetica Neue LT Std 57 Condensed}
+\setsansfont{Helvetica Neue LT Std 47 Light Condensed}
+\setmonofont{Fira Code}
+
+%	Title
+%----------
+
+\makecvtitle % Print the CV title
+
+%	About Me
+%-------------
+
+\section{About Me}
+
+ { \flushleft I'm a \textbf{self-taught} software developer with \textbf{3 years} of formal experience, having worked mainly in \textbf{Full Stack} Web development, along some Sysadmin and DevOps work, with a focus on small organizations. I mainly use \textbf{TypeScript} and a bit of \textbf{Rust}, but can handle different languages and frameworks, as the breadth of my experience forced me to be quick to adapt. My non-sofware experience and education also includes Graphic Design, Engineering, UX, and business development.
+
+ }
+
+%	Work
+%------------
+
+
+\section{Work Experience}
+{\setstretch{0.7}
+\cventry{2019 - Present}{Software Developer}{Environmental Hub Foundation}{}{}{}
+{\flushleft Successfully managed several small projects, ranging from writing a user-facing website, internal tools and libraries to the complete design and construction of most of the stack in this organization. Mostly worked in TypeScript, but because of tech choices and external limitations worked in several languages at different degrees of competency, including Rust, Python, LaTeX, and several DSLs. Activities ranged from managing virtualizaztion technologies and AWS tools, deploying and configuring a lot of software, and writing shims to make said software work together, to designing and building the current private cloud infrastructure, writing several websites, a lot of documentation (technical and nontechnical) and many many many hours of translating and understanding user needs to viable solutions.   } \hfill \\[-1em]
+\hfill \\[1em]
+
+\cventry{2018 - 2019}{Web Developer}{Freelance}{}{}{}
+{\flushleft Worked mostly doing frontend work in Jamstack, using either React, Angular, or Vanilla JS/TS. Also done several CSS-heavy and design projects, and some backend work in PHP, NodeJS and Python.} \hfill \\[-1em]
+\hfill \\
+
+
+%	Education
+%------------
+
+
+\section{Education}
+\cventry{2016 onwards}{Self Taught}{}{}{}{}
+{\flushleft While focused on training myself to work as a software developer, I've also studied several subjects useful to building business acumen, like Business Management, Design, UX, Psychology, Economics, and Mathematics.}
+\hfill \\[1em]
+
+\cventry{2009 -- 2016}{Mechanical Electrical Technician}{UNT Technical Institute}{Equivalent to an Associate Degree}{}{}
+{\flushleft Competencies include: \begin{itemize}
+		\item Design, installation and mainteinance of electrical machinery in low and mid voltage, fixed and mobile structures, and hydraulic/pneumatic systems.
+		\item Programming and installation of industrial PLCs and smart relays.
+		\item Design and management of small-scale industrial plants.
+		\item Thesis accesible at \href{https://goo.gl/JtjfTV}{\color{blue}{goo.gl/JtjfTV}}.
+	\end{itemize}
+	\hfill \\[2em]
+}
+
+%	Extras
+%------------
+
+\section{More Stuff}
+
+\cvitemwithcomment{}{GitHub}{\flushleft \href{https://github.com/aordano}{\color{blue}{github.com/aordano}}}
+\cvitemwithcomment{}{LinkedIn}{\flushleft \href{https://linkedin.com/aordano}{\color{blue}{linkedin.com/aordano}}}
+%\cvitemwithcomment{}{Portfolio}{\flushleft \href{https://pf.choccymilk.dev}{\color{blue}{pf.choccymilk.dev}}}  %[WIP]
+%\cvitemwithcomment{}{Blog}{\flushleft \href{https://blog.choccymilk.dev}{\color{blue}{blog.choccymilk.dev}}}  %[WIP]
+%\cvitemwithcomment{}{Recursion}{\flushleft \href{https://cv.choccymilk.dev}{\color{blue}{cv.choccymilk.dev}}}  %[WIP]
+%\cvitemwithcomment{}{Cat pics}{\flushleft \href{https://cats.choccymilk.dev}{\color{blue}{cats.choccymilk.dev}}}  %[WIP]
+\hfill \\
+
+Check out the source for this CV at \href{https://github.com/aordano/cv}{\color{blue}{github.com/aordano/cv}}.
+
+\end{document}
