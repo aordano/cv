@@ -44,7 +44,7 @@
         {
             "name": "mv_docs_html",
             "command": "mv",
-            "args": ["%OUTDIR%/%DOCFILE%.html", "docs/%DOCFILE%.html"],
+            "args": ["%OUTDIR%/%DOCFILE%.html", "docs/index.html"],
             "env": {}
         },
         {

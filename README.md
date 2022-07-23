@@ -38,7 +38,7 @@ xdvipdfmx -v -E -D "rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=
 pdf2htmlEX cv.pdf --process-outline=0 --dest-dir=build
 mkdir docs
 mv cv.pdf docs/cv.pdf
-mv build/cv.html docs/cv.html
+mv build/cv.html docs/index.html
 ```
 
 Yeah well sorry for the arcane incantations, you really should just use the recipes.
