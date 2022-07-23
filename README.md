@@ -1,6 +1,6 @@
 # CV / Resumé
 
-Hi! This is my resumé. It is written on and based off Xavier Danaux's [Modern CV Template](https://www.latextemplates.com/template/moderncv-cv-and-cover-letter).
+Hi! This is my resumé. It is written on $\LaTeX$ and based off Xavier Danaux's [Modern CV Template](https://www.latextemplates.com/template/moderncv-cv-and-cover-letter).
 
 The graphics are made in Adobe Illustrator and imported natively into the TeX file.
 
