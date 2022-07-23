@@ -28,8 +28,8 @@ $ xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory
 ### PDF and HTML
 
 ``` bash
-$ xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build cv.tex -no-pdf cv.tex
-$ xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build cv.tex -no-pdf cv.tex
+$ xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build -no-pdf cv.tex
+$ xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build -no-pdf cv.tex
 $ xdvipdfmx -v -E -D "rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=true -dInterpolateControl=-1 -dWRITESYSTEMDICT -dNOOUTERSAVE -dALLOWPSTRANSPARENCY -dSAFER --permit-file-all=/usr/share/texfm-dist/* -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -dDOPDFMARKS -sOutputFile='%o' '%i' -c quit"
 $ pdf2htmlex cv.pdf --process-outline=0 --dest-dir=build
 ```
