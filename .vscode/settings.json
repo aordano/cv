@@ -26,25 +26,25 @@
         {
             "name": "clean_dist",
             "command": "rm",
-            "args": ["%OUTDIR%/dist", "-drf"],
+            "args": ["dist", "-drf"],
             "env": {}
         },
         {
             "name": "mk_dist",
             "command": "mkdir",
-            "args": ["%OUTDIR%/dist"],
+            "args": ["dist"],
             "env": {}
         },
         {
             "name": "mv_dist_pdf",
             "command": "mv",
-            "args": ["%DOC%.pdf", "%OUTDIR%/dist/%DOCFILE%.pdf"],
+            "args": ["%DOC%.pdf", "dist/%DOCFILE%.pdf"],
             "env": {}
         },
         {
             "name": "mv_dist_html",
             "command": "mv",
-            "args": ["%OUTDIR%/%DOCFILE%.html", "%OUTDIR%/dist/%DOCFILE%.html"],
+            "args": ["%OUTDIR%/%DOCFILE%.html", "dist/%DOCFILE%.html"],
             "env": {}
         },
         {
