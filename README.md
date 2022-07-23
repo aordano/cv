@@ -6,7 +6,7 @@ The graphics are made in Adobe Illustrator and imported natively into the TeX fi
 
 ## Requirements
 
-To build this file you need a LaTeX distribution on your PATH, and several packages. It is recommended to have a full install or enable on-the-fly installation of packages (for some reason this uses a ton of them).
+To build this file you need a LaTeX docsribution on your PATH, and several packages. It is recommended to have a full install or enable on-the-fly installation of packages (for some reason this uses a ton of them).
 
 You also need `xelatex` (and `xdvipdfmx` configured to render GhostScript in unsafe mode, plus `pdf2htmlex` if you want HTML output) in your PATH.
 
@@ -24,8 +24,8 @@ To build this, either use the provided recipes or:
 mkdir build
 xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build cv.tex
 xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build cv.tex
-mkdir dist
-mv build/cv.pdf dist/cv.pdf
+mkdir docs
+mv build/cv.pdf docs/cv.pdf
 ```
 
 ### PDF and HTML
@@ -34,11 +34,11 @@ mv build/cv.pdf dist/cv.pdf
 mkdir build
 xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build -no-pdf cv.tex
 xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=build -no-pdf cv.tex
-xdvipdfmx -v -E -D "rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=true -dInterpolateControl=-1 -dWRITESYSTEMDICT -dNOOUTERSAVE -dALLOWPSTRANSPARENCY -dSAFER --permit-file-all=/usr/share/texfm-dist/* -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -dDOPDFMARKS -sOutputFile='%o' '%i' -c quit" build/cv.xdv
+xdvipdfmx -v -E -D "rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=true -dInterpolateControl=-1 -dWRITESYSTEMDICT -dNOOUTERSAVE -dALLOWPSTRANSPARENCY -dSAFER --permit-file-all=/usr/share/texfm-docs/* -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -dDOPDFMARKS -sOutputFile='%o' '%i' -c quit" build/cv.xdv
 pdf2htmlEX cv.pdf --process-outline=0 --dest-dir=build
-mkdir dist
-mv cv.pdf dist/cv.pdf
-mv build/cv.html dist/cv.html
+mkdir docs
+mv cv.pdf docs/cv.pdf
+mv build/cv.html docs/cv.html
 ```
 
 Yeah well sorry for the arcane incantations, you really should just use the recipes.

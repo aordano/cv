@@ -7,10 +7,10 @@
                 "xelatex-dvi",
                 "xdvipdfmx-unsafe",
                 "pdf2html_no",
-                "clean_dist",
-                "mk_dist",
-                "mv_dist_pdf",
-                "mv_dist_html"
+                "clean_docs",
+                "mk_docs",
+                "mv_docs_pdf",
+                "mv_docs_html"
             ]
         },
         {
@@ -24,27 +24,27 @@
     ],
     "latex-workshop.latex.tools": [
         {
-            "name": "clean_dist",
+            "name": "clean_docs",
             "command": "rm",
-            "args": ["dist", "-drf"],
+            "args": ["docs", "-drf"],
             "env": {}
         },
         {
-            "name": "mk_dist",
+            "name": "mk_docs",
             "command": "mkdir",
-            "args": ["dist"],
+            "args": ["docs"],
             "env": {}
         },
         {
-            "name": "mv_dist_pdf",
+            "name": "mv_docs_pdf",
             "command": "mv",
-            "args": ["%DOC%.pdf", "dist/%DOCFILE%.pdf"],
+            "args": ["%DOC%.pdf", "docs/%DOCFILE%.pdf"],
             "env": {}
         },
         {
-            "name": "mv_dist_html",
+            "name": "mv_docs_html",
             "command": "mv",
-            "args": ["%OUTDIR%/%DOCFILE%.html", "dist/%DOCFILE%.html"],
+            "args": ["%OUTDIR%/%DOCFILE%.html", "docs/%DOCFILE%.html"],
             "env": {}
         },
         {
@@ -86,7 +86,7 @@
             "args": [
                 "-v",
                 "-E",
-                "-D \"rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=true -dInterpolateControl=-1 -dWRITESYSTEMDICT -dNOOUTERSAVE -dALLOWPSTRANSPARENCY -dSAFER --permit-file-all=/usr/share/texfm-dist/* -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -dDOPDFMARKS -sOutputFile='%o' '%i' -c quit\"",
+                "-D \"rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=true -dInterpolateControl=-1 -dWRITESYSTEMDICT -dNOOUTERSAVE -dALLOWPSTRANSPARENCY -dSAFER --permit-file-all=/usr/share/texfm-docs/* -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -dDOPDFMARKS -sOutputFile='%o' '%i' -c quit\"",
                 "%OUTDIR%/%DOCFILE%.xdv"
             ],
             "env": {}
