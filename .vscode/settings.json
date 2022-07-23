@@ -1,0 +1,95 @@
+{
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "[CV]: HTML | XeLaTeX (Post-DVI)",
+            "tools": [
+                "xelatex-dvi",
+                "xelatex-dvi",
+                "xdvipdfmx-unsafe",
+                "pdf2html_no",
+                "clean_dist",
+                "mk_dist",
+                "mv_dist_pdf",
+                "mv_dist_html"
+            ]
+        },
+        {
+            "name": "[CV]: XeLaTeX (Post-DVI)",
+            "tools": ["xelatex-dvi", "xelatex-dvi", "xdvipdfmx-unsafe"]
+        },
+        {
+            "name": "[CV]: XeLaTeX",
+            "tools": ["xelatex", "xelatex"]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "clean_dist",
+            "command": "rm",
+            "args": ["%OUTDIR%/dist", "-drf"],
+            "env": {}
+        },
+        {
+            "name": "mk_dist",
+            "command": "mkdir",
+            "args": ["%OUTDIR%/dist"],
+            "env": {}
+        },
+        {
+            "name": "mv_dist_pdf",
+            "command": "mv",
+            "args": ["%DOC%.pdf", "%OUTDIR%/dist/%DOCFILE%.pdf"],
+            "env": {}
+        },
+        {
+            "name": "mv_dist_html",
+            "command": "mv",
+            "args": ["%OUTDIR%/%DOCFILE%.html", "%OUTDIR%/dist/%DOCFILE%.html"],
+            "env": {}
+        },
+        {
+            "name": "pdf2html_no",
+            "command": "pdf2htmlEX",
+            "args": ["%DOC%.pdf", "--process-outline=0", "--dest-dir=%OUTDIR%"],
+            "env": {}
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "xelatex-dvi",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-directory=%OUTDIR%",
+                "-no-pdf",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            // ? GhostScript rules are defined directly instead of using xdvipdfmx-unsafe.cfg
+            // because for some reason the compiler ignores it (even tho it loaded ok)
+            "name": "xdvipdfmx-unsafe",
+            "command": "xdvipdfmx",
+            "args": [
+                "-v",
+                "-E",
+                "-D \"rungs -dEmbedAllFonts=true -dMaxSubsetPct=100 -dSubsetFonts=true -dInterpolateControl=-1 -dWRITESYSTEMDICT -dNOOUTERSAVE -dALLOWPSTRANSPARENCY -dSAFER --permit-file-all=/usr/share/texfm-dist/* -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -dDOPDFMARKS -sOutputFile='%o' '%i' -c quit\"",
+                "%OUTDIR%/%DOCFILE%.xdv"
+            ],
+            "env": {}
+        }
+    ]
+}
