@@ -6,7 +6,7 @@ The graphics are made in Adobe Illustrator and imported natively into the TeX fi
 
 ## Requirements
 
-To build this file you need a LaTeX docsribution on your PATH, and several packages. It is recommended to have a full install or enable on-the-fly installation of packages (for some reason this uses a ton of them).
+To build this file you need a LaTeX distribution on your PATH, and several packages. It is recommended to have a full install or enable on-the-fly installation of packages (for some reason this uses a ton of them).
 
 You also need `xelatex` (and `xdvipdfmx` configured to render GhostScript in unsafe mode, plus `pdf2htmlex` if you want HTML output) in your PATH.
 
