@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%	Preamble
+%------------
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage[total={170mm,257mm}, left=20mm, right=20mm]{geometry}
+\usepackage{fontspec}
+\usepackage{avant}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\moderncvstyle{casual}
+\moderncvcolor{purple}
+
+\firstname{Ágata Irene}
+\familyname{Ordano}
+\title{Currículum Vitae}
+\email{agata@choccymilk.dev}
+\phone{+54 381 651-5378}
+
+\begin{document}
+
+\setromanfont{Helvetica Neue LT Std 57 Condensed}
+\setsansfont{Helvetica Neue LT Std 47 Light Condensed}
+\setmonofont{Fira Code}
+
+%	Title
+%----------
+
+\makecvtitle % Print the CV title
+
+%	About Me
+%-------------
+
+\section{Acerca de mí}
+
+ { \flushleft Soy una desarrolladora de software \textbf{autodidacta} con \textbf{3 años} de experiencia formal, habiendo trabajado principalmente en desarrollo Web \textbf{Full Stack}, y algo de Sysadmin y DevOps, con un enfoque en organizaciones pequeñas. Principalmente uso \textbf{TypeScript} y un poco de \textbf{Rust}, pero puedo manejar varios lenguajes, librerías y herramientas, ya que lo variado de mi trabajo me forzó a adaptarme rápidamente. Mi experiencia y educación no relacionada con software también incluye Diseño Gráfico, Ingeniería, UX y administración de empresas.
+
+ }
+
+%	Work
+%------------
+
+
+\section{Experiencia Laboral}
+{\setstretch{0.7}
+\cventry{2019 - Actualidad}{Desarrolladora Full Stack}{Fundación Nodo Ambiental}{}{}{}
+{\flushleft Administré exitosamente varios proyectos pequeños-medianos, desde escribir sitios web públicos, herramientas internas y librerías, hasta el completo diseño y construcción de la mayoría del stack Cloud de la organización. Principalmente operé en TS, pero debido a elecciones técnicas y limitaciones externas trabajé en distintos lenguajes (a distintos grados de competencia en ellos), incluyendo Rust, Python, TeX/LaTeX, y varios DSLs. Mis actividades incluyen administrar tecnologías de virtualización y servicios/herramientas de AWS, despliegue y configuración de mucho software de servidor, y la escritura de interfaces entre dicho software, diseño de sistemas en la nube (usando herramientas como la suite de HashiCorp, Docker, k8s, QEMU/KVM), escribir varios sitios web usando distintas tecnologías en todo el stack, la escritura de mucha documentación (tanto técnica como no técnica) y muchas horas de entender las necesidades de los usuarios y traducirlas a soluciones viables.   } \hfill \\[-1em]
+\hfill \\[1em]
+
+\cventry{2018 - 2019}{Desarrolladora Web}{Freelance}{}{}{}
+{\flushleft Trabajé haciendo principalmente trabajo Frontend en Jamstack, usando React, Angular, o Vanilla JS/TS. También hice varios proyectos con mucho énfasis en diseño y CSS, y algo de trabajo en backend usando PHP, NodeJS y Python.} \hfill \\[-1em]
+\hfill \\
+
+
+%	Education
+%------------
+
+
+\section{Educación}
+\cventry{2016 en adelante}{Autodidacta}{}{}{}{}
+{\flushleft Si bien me enfoqué en entrenarme para trabajar como desarrolladora de software (mediante cursos, libros, mucha práctica y mentores en la industria), también estudié otros temas útiles para desarrollar conocimiento de negocios, como administración de empresas, diseño, UX, psicología, economía y matemática.}
+\hfill \\[1em]
+
+\cventry{2009 -- 2016}{Técnica Eléctrica Mecánica}{Instituto Técnico UNT}{}{}{}
+{\flushleft Competencias incluyen: \begin{itemize}
+		\item Diseño, instalación y mantenimiento de maquinaria eléctrica a baja y media tensión, estructuras fijas y móviles, y sistemas hidráulicos/neumáticos.
+		\item Programación e instalación de PLCs y relés inteligentes.
+		\item Diseño y administración de plantas industriales pequeñas.
+		\item Tesis de grado accesible en \href{https://goo.gl/JtjfTV}{\color{blue}{goo.gl/JtjfTV}}.
+	\end{itemize}
+	\hfill \\[2em]
+}
+
+%	Extras
+%------------
+
+\section{Extras}
+
+\cvitemwithcomment{}{GitHub}{\flushleft \href{https://github.com/aordano}{\color{blue}{github.com/aordano}}}
+\cvitemwithcomment{}{LinkedIn}{\flushleft \href{https://www.linkedin.com/in/ordanoagata/}{\color{blue}{linkedin.com/in/ordanoagata}}}
+%\cvitemwithcomment{}{Portfolio}{\flushleft \href{https://pf.choccymilk.dev}{\color{blue}{pf.choccymilk.dev}}}  %[WIP]
+%\cvitemwithcomment{}{Blog}{\flushleft \href{https://blog.choccymilk.dev}{\color{blue}{blog.choccymilk.dev}}}  %[WIP]
+\cvitemwithcomment{}{Recursión}{\flushleft \href{https://cv.choccymilk.dev/cv_es.pdf}{\color{blue}{cv.choccymilk.dev}}}
+%\cvitemwithcomment{}{Cat pics}{\flushleft \href{https://cats.choccymilk.dev}{\color{blue}{cats.choccymilk.dev}}}  %[WIP]
+\hfill \\
+
+Puedes ver la fuente de este CV en \href{https://github.com/aordano/cv}{\color{blue}{github.com/aordano/cv}}.
+
+\end{document}
