@@ -38,7 +38,7 @@
 \moderncvstyle{casual}
 \moderncvcolor{purple}
 
-\firstname{Ágata Irene}
+\firstname{Ágata}
 \familyname{Ordano}
 \title{Resumé}
 \email{agata@choccymilk.dev}
@@ -46,21 +46,26 @@
 
 \begin{document}
 
-\setromanfont{Helvetica Neue LT Std 57 Condensed}
-\setsansfont{Helvetica Neue LT Std 47 Light Condensed}
+\setromanfont{HelveticaNeueLTCom-LtCn}
+\setsansfont[
+	BoldFont={HelveticaNeueLTCom-BdCn}
+]{HelveticaNeueLTCom-LtCn}
 \setmonofont{Fira Code}
+
 
 %	Title
 %----------
 
+\hfill \\[-2em]
 \makecvtitle % Print the CV title
+\hfill \\[-6em]
 
 %	About Me
 %-------------
 
 \section{About Me}
 
- { \flushleft I'm a \textbf{self-taught} software developer with \textbf{3 years} of formal experience, having worked mainly in \textbf{Full Stack} Web development, along some Sysadmin and DevOps work, with a focus on small organizations. I mainly use \textbf{TypeScript} and a bit of \textbf{Rust}, but can handle different languages and frameworks, as the breadth of my experience forced me to be quick to adapt. My non-sofware experience and education also includes Graphic Design, Engineering, UX, and business development.
+ { \flushleft As a \textbf{self-taught} software developer with \textbf{4 years} of experience, I specialize in \textbf{Full Stack} Web Development and \textbf{Cloud Infrastructure}, including platforms like GCP and AWS. My proficiency extends to Sysadmin and DevOps, especially in small organizational environments. \\ I'm adept in \textbf{TypeScript} and \textbf{Rust} and have a versatile background in languages such as \textbf{PHP}, \textbf{Python}, \textbf{JavaScript}, and technologies like \textbf{CakePHP}, \textbf{React}, \textbf{Svelte} and \textbf{Firebase} and databases including \textbf{MySQL}, and some \textbf{NoSQL} systems. My quick adaptability is complemented by my diverse background in Graphic Design, Engineering, UX, and business development, enriching my approach to software solutions and multidisciplinary teamwork. 
 
  }
 
@@ -70,12 +75,37 @@
 
 \section{Work Experience}
 {\setstretch{0.7}
-\cventry{2019 - Present}{Software Developer}{Environmental Hub Foundation}{}{}{}
-{\flushleft Successfully managed several small projects, ranging from writing a user-facing website, internal tools and libraries to the complete design and construction of most of the stack in this organization. Mostly worked in TypeScript, but because of tech choices and external limitations worked in several languages at different degrees of competency, including Rust, Python, LaTeX, and several DSLs. Activities ranged from managing virtualizaztion technologies and AWS tools, deploying, configuring a lot of software and writing shims to make said software work together, to designing and building their current private cloud infrastructure, writing several websites, a lot of documentation (technical and nontechnical) and many many hours of translating and understanding user needs to viable solutions.   } \hfill \\[-1em]
-\hfill \\[1em]
+\cventry{2022 - Present}{Infra and Full Stack Developer}{BidBit}{}{}{}
+{
+	
+\begin{itemize}
+	\item Spearheaded the modernization of a legacy PHP system, transitioning to a new architecture on GCP for improved scalability and reliability.
+	\item Implemented TypeScript in refactoring legacy frontend code, aligning with modern development practices.
+	\item Integrated CI/CD into production, using a custom Rust-based pipeline.
+	\item Developed several new backend features, incorporating Object Storage, logging, tracing, caching, authorization, and more.
+	\item Performed webmaster activities including domain management, mailing, and monitoring.
+\end{itemize}
+ } \hfill \\[-1em]
+\hfill \\
+
+\cventry{2019 - 2022}{Software Developer}{Environmental Hub Foundation}{}{}{}
+{
+\begin{itemize}
+	\item Managed various projects including website development and internal tool creation.
+	\item Worked predominantly with TypeScript, Rust, and Python.
+	\item Balanced roles in sysadmin, cloud management (AWS/hybrid), software development, and technical writing.
+\end{itemize}	
+} \hfill \\[-1em]
+\hfill \\
 
 \cventry{2018 - 2019}{Web Developer}{Freelance}{}{}{}
-{\flushleft Worked mostly doing frontend work in Jamstack, using either React, Angular, or Vanilla JS/TS. Also done several CSS-heavy and design projects, and some backend work in PHP, NodeJS and Python.} \hfill \\[-1em]
+{
+	\begin{itemize}
+		\item Specialized in Jamstack-based frontend development using React, Angular, and Vanilla JS/TS.
+		\item Undertook CSS-intensive and design-centric projects.
+		\item Engaged in backend development with PHP, NodeJS, and Python.
+	\end{itemize}	
+} \hfill \\[-1.5em]
 \hfill \\
 
 
@@ -85,18 +115,28 @@
 
 \section{Education}
 \cventry{2016 onwards}{Self Taught}{}{}{}{}
-{\flushleft While focused on training myself to work as a software developer, I've also studied several subjects useful to building business acumen, like Business Management, Design, UX, Psychology, Economics, and Mathematics.}
-\hfill \\[1em]
-
-\cventry{2009 -- 2016}{Mechanical Electrical Technician}{UNT Technical Institute}{Equivalent to an Associate Degree}{}{}
-{\flushleft Competencies include: \begin{itemize}
-		\item Design, installation and mainteinance of electrical machinery in low and mid voltage, fixed and mobile structures, and hydraulic/pneumatic systems.
-		\item Programming and installation of industrial PLCs and smart relays.
-		\item Design and management of small-scale industrial plants.
-		\item Thesis accesible at \href{https://goo.gl/JtjfTV}{\color{blue}{goo.gl/JtjfTV}}.
-	\end{itemize}
-	\hfill \\[2em]
+{
+	\begin{itemize}
+		\item Actively engaged in self-directed learning for an extended period to develop software development skills.
+		\item Expanded knowledge in complementary fields like Business Management, Design, UX, Psychology, Marketing, Economics, and Mathematics to generate business acumen.
+	\end{itemize}	
 }
+\hfill \\[-0.5em] 
+
+\cventry{2009 - 2016}{Mechanical Electrical Technician}{UNT Technical Institute}{}{}{}
+{
+	\begin{itemize}
+		\item Completed a program equivalent to an Associate Degree.
+		\item Acquired foundational technical and engineering skills in mechanical and electrical systems, including design and execution of electromechanical devices and installations in the industry.
+	\end{itemize}	
+	%\flushleft Competencies include: \begin{itemize}
+	%	\item Design, installation and mainteinance of electrical machinery in low and mid voltage, fixed and mobile structures, and hydraulic/pneumatic systems.
+	%	\item Programming and installation of industrial PLCs and smart relays.
+	%	\item Design and management of small-scale industrial plants.
+	%	\item Thesis accesible at \href{https://goo.gl/JtjfTV}{\color{blue}{goo.gl/JtjfTV}}.
+	%\end{itemize}
+}
+\hfill \\[-0.5em]
 
 %	Extras
 %------------
